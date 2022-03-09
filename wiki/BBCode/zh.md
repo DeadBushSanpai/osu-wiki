@@ -59,21 +59,21 @@ BBCode 同许多其它文本标记语言一样，用标签的体系格式化文�
 
 *注：“删除线”也被称作“中划线”。*
 
-`[strike]` 标签以一条“横穿”文本的方式tag is used to indicate a removal of previously included text through the use of a horizontal line that "crosses out" the text (i.e. a "strikethrough").
+`[strike]` 标签以一条“横穿”文本的横线标出过去记录而现在删除的内容（即为删除线）。
 
-Toolbar button: ![Strike button](img/strike.png "Strikethrough")
-
-在单词或句子的**中间画一条水平线**。
-
-- 专用按钮： ![删除线](img/strike.png)
-- 注：
-  - 尽量地少用这个标签。过度使用只会适得其反，使文章更难阅读。
-- 语法：
-  ```
-  [strike] ... [/strike]
-  ```
+专用按钮： ![删除线按钮](img/strike.png "删除线")
 
 ### 颜色
+
+```
+[color=六进制码]文本[/color]
+```
+
+*请参阅 [X11 颜色名称](https://zh.wikipedia.org/wiki/网页颜色#X11名称) 以获取颜色名称的列表。*
+
+`[color]` 标签可将文本自定义为各种 web-safe<!--NeedTrans--> 的颜色。标签 The tag uses the [HEX code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) format to specify the colour, although it can also be specified through HTML colour names like "red" or "green." To specify, replace the `HEXCODE` argument with a colour's corresponding HEX code or HTML name.
+
+The aforementioned argument does not take quotation marks (`"`), and does not have a default colour. If no argument is specified, or if quotation marks are used, the tag will not be parsed as a BBCode tag.
 
 给文本**设置颜色**。
 
@@ -90,8 +90,6 @@ Toolbar button: ![Strike button](img/strike.png "Strikethrough")
   ```
   [color=HEXCODE] ... [/color]
   ```
-
-请参阅 [X11 颜色名称](https://zh.wikipedia.org/wiki/网页颜色#X11名称) 以获取颜色名称的列表。
 
 ### 字体大小
 

@@ -66,12 +66,12 @@ BBCode 同许多其它文本标记语言一样，用标签的体系格式化文�
 ### 颜色
 
 ```
-[color=六进制码]文本[/color]
+[color=十六进制码]文本[/color]
 ```
 
 *请参阅 [X11 颜色名称](https://zh.wikipedia.org/wiki/网页颜色#X11名称) 以获取颜色名称的列表。*
 
-`[color]` 标签可将文本自定义为各种 web-safe<!--NeedTrans--> 的颜色。标签 The tag uses the [HEX code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) format to specify the colour, although it can also be specified through HTML colour names like "red" or "green." To specify, replace the `HEXCODE` argument with a colour's corresponding HEX code or HTML name.
+`[color]` 标签可将文本自定义为各种 web-safe<!--NeedTrans--> 的颜色。标签的颜色由格式为[十六进制码](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet)<!--NeedTrans: Need Replace URL-->或 HTML 的颜色名如 “red”、 “green” 声明。声明方式format to specify the colour, although it can also be specified through HTML colour names like "red" or "green." To specify, replace the `HEXCODE` argument with a colour's corresponding HEX code or HTML name.
 
 The aforementioned argument does not take quotation marks (`"`), and does not have a default colour. If no argument is specified, or if quotation marks are used, the tag will not be parsed as a BBCode tag.
 

@@ -57,7 +57,7 @@ BBCode 同许多其它文本标记语言一样，用标签的体系格式化文�
 [strike]文本[/strike]
 ```
 
-*注：“删除线”也被称作“中划线”。*
+*注：“删除线”也被称作“中划线”。*<!--NeedCheck: Should this Note keep?-->
 
 `[strike]` 标签以一条“横穿”文本的横线标出过去记录而现在删除的内容（即为删除线）。
 
@@ -71,27 +71,22 @@ BBCode 同许多其它文本标记语言一样，用标签的体系格式化文�
 
 *请参阅 [X11 颜色名称](https://zh.wikipedia.org/wiki/网页颜色#X11名称) 以获取颜色名称的列表。*
 
-`[color]` 标签可将文本自定义为各种 web-safe<!--NeedTrans--> 的颜色。标签的颜色由格式为[十六进制码](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet)<!--NeedTrans: Need Replace URL-->或 HTML 的颜色名如 “red”、 “green” 声明。声明方式为format to specify the colour, although it can also be specified through HTML colour names like "red" or "green." To specify, replace the `HEXCODE` argument with a colour's corresponding HEX code or HTML name.
+`[color]` 标签可将文本自定义为各种 web-safe<!--NeedTrans--> 的颜色。标签的颜色由格式为[十六进制码](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet)<!--NeedTrans: Need Replace URL-->或 HTML 的颜色名如 “red”、 “green” 声明。声明方式为替换`十六进制码`参数为所需颜色对应的十六进制代码或 HTML 的颜色名。
 
-The aforementioned argument does not take quotation marks (`"`), and does not have a default colour. If no argument is specified, or if quotation marks are used, the tag will not be parsed as a BBCode tag.
+参数中不得出现引号（`"`），颜色没有默认值的说法。如果未提供参数，或者参数中出现了引号，整个标签不被视做 BBCode 标签而以普通文本形式出现。
 
-给文本**设置颜色**。
+### 字号
 
-- 专用按钮： N/A
-- 注：
-  - 取色器位于文本框的右侧。
-  - 尽量地少用这个标签。过度使用只会适得其反。这个标签可能会使你的文本难以辨认。
-  - 如果你改变了某段文本的颜色，请确保它能与背景颜色形成对比，这样才能让任何人都可以辨识出文本。
-  - `HEXCODE` 参数不应该使用引号包围。
-- 语法：
-  - `HEXCODE` 表示颜色，值为十六进制数或颜色名。
-    - 如果参数为一个十六进制数，它必须以 `#` 开头，然后为 6 个十六进制（0-9，A-F）字符。
-    - 如果参数为一个颜色名称，它必须为一个合法的 HTML 颜色名。
-  ```
-  [color=HEXCODE] ... [/color]
-  ```
+```
+[size=字号]文本[/size]
+```
 
-### 字体大小
+The `[size]` tag is used to stylise text through the use of differing font sizes. Currently, there are four sizes that are supported by the osu! website: 50, 85, 100, and 150. The sizes are internally referred to as "tiny," "small," "normal," and "large" respectively.
+
+The `NUMBER` argument does not accept quotation marks, and only accepts one of the four supported sizes. If a number, that is not one of the supported four, is inputted, the text will revert to the default size.
+
+Toolbar button: ![Font size options](img/font-size.png "Font size")
+
 
 相对地调整文本大小。
 

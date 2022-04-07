@@ -81,34 +81,23 @@ BBCode 同许多其它文本标记语言一样，用标签的体系格式化文�
 [size=字号]文本[/size]
 ```
 
-The `[size]` tag is used to stylise text through the use of differing font sizes. Currently, there are four sizes that are supported by the osu! website: 50, 85, 100, and 150. The sizes are internally referred to as "tiny," "small," "normal," and "large" respectively.
+`[size]` 标签可将文本自定义为不同大小。目前 osu! 网站只提供了 50、 85、 100、 150 四种字号。分别 internally<!--NeedTrans--> 被称做“极小”、“小”、“普通”、“大”。
 
-The `NUMBER` argument does not accept quotation marks, and only accepts one of the four supported sizes. If a number, that is not one of the supported four, is inputted, the text will revert to the default size.
+`NUMBER` 参数中不得出现引号，并且只可为四种字号之一。如果参数与上述四种不符，文本的字号将被设为默认大小。
 
-Toolbar button: ![Font size options](img/font-size.png "Font size")
-
-
-相对地调整文本大小。
-
-- 专用按钮： ![字体大小选项](img/font-size.png)
-- 注：
-  - 尽量地少用这个标签。
-  - 你可以使用的只有 4 种尺寸：
-    - `50` （微小）
-    - `85` （小）
-    - `100` （中等；默认）
-    - `150` （大）
-  - 如果你输入的值不是上面列出的某个值，那么它将使用默认的字体大小。
-  - `NUMBER` 参数不应该使用引号包围。
-- 语法：
-  - `NUMBER` 参数只能是这些数其中的一个（`50`、`85`、`100`、或 `150`）。
-  ```
-  [size=NUMBER] ... [/size]
-  ```
+专用按钮： ![字体大小选项](img/font-size.png "字号")
 
 ### 剧透条
 
 *不要与 [剧透框](#剧透框) 混淆。*
+
+```
+[spoiler]文本[/spoiler]
+```
+
+`[spoiler]` 标签遮挡tag is used to cover up sensitive information with a solid black foreground that reveals the text underneath it upon being highlighted. If stacked with the [`[color]`](#colour) tag, the black cover will not be affected. However, the text under the black cover will still be coloured, whether it is readable or not.
+
+The tag is most commonly used to prevent spoiling critical/sensitive information regarding a TV show, movie, or other media. It is also sometimes used for comedic effect or emphasis.
 
 用黑色背景**覆盖文本**。
 
